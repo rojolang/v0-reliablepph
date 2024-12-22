@@ -22,43 +22,31 @@ export function HomeClient() {
     <ParallaxProvider>
       <div className="min-h-screen bg-black">
         <FixedHeader />
-        <main className="snap-y snap-mandatory scroll-smooth">
-          <section id="hero" className="min-h-screen snap-start snap-always flex items-center">
-            <div className="container mx-auto px-4 py-20">
-              <HeroSection />
-            </div>
+        <main className="snap-y snap-mandatory">
+          <section id="hero" className="snap-start">
+            <HeroSection />
           </section>
-          <section id="sportsbook" className="min-h-screen snap-start snap-always flex items-center">
-            <div className="container mx-auto px-4 py-20">
-              <SportsbookPreview />
-            </div>
+          <section id="sportsbook" className="snap-start">
+            <SportsbookPreview />
           </section>
-          <section id="stats" className="min-h-screen snap-start snap-always flex items-center">
-            <div className="container mx-auto px-4 py-20">
-              <StatsReveal
-                stats={[
-                  { value: "100K+", label: "Active Users" },
-                  { value: "$1M+", label: "Daily Bets" },
-                  { value: "24/7", label: "Customer Support" },
-                  { value: "99.9%", label: "Uptime" },
-                ]}
-              />
-            </div>
+          <section id="stats" className="snap-start">
+            <StatsReveal
+              stats={[
+                { value: "100K+", label: "Active Users" },
+                { value: "$1M+", label: "Daily Bets" },
+                { value: "24/7", label: "Customer Support" },
+                { value: "99.9%", label: "Uptime" },
+              ]}
+            />
           </section>
-          <section id="stay-ahead" className="min-h-screen snap-start snap-always flex items-center">
-            <div className="container mx-auto px-4 py-20">
-              <StayAhead />
-            </div>
+          <section id="stay-ahead" className="snap-start">
+            <StayAhead />
           </section>
-          <section id="reasons" className="min-h-screen snap-start snap-always flex items-center">
-            <div className="container mx-auto px-4 py-20">
-              <FeaturesSection />
-            </div>
+          <section id="reasons" className="snap-start">
+            <FeaturesSection />
           </section>
-          <section id="last-call" className="min-h-screen snap-start snap-always flex items-center">
-            <div className="container mx-auto px-4 py-20">
-              <LastCall />
-            </div>
+          <section id="last-call" className="snap-start">
+            <LastCall />
           </section>
         </main>
         <SiteFooter />
@@ -69,4 +57,3 @@ export function HomeClient() {
     </ParallaxProvider>
   )
 }
-

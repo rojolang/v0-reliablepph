@@ -1,17 +1,6 @@
-'use client'
-
-import React, { useEffect } from 'react'
-import { useSearchParams } from 'next/navigation'
+import React from 'react'
 import { HomeClient } from "@/components/home-client"
-import { handleUtmData } from "@/utils/utm"
 
-export default function HomeContent() {
-  const searchParams = useSearchParams()
-
-  useEffect(() => {
-    handleUtmData(searchParams)
-  }, [searchParams])
-
+export default function Home() {
   return <HomeClient />
 }
-
